@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="example.com.mobieplay.MainActivity">
+
+    <include layout="@layout/titlebar" />
+    <FrameLayout
+        android:id="@+id/fl_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:id="@+id/rg_bottom_tag"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_main_layout"
+        android:background="#11000000"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_video"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_video_drawable_selector"
+            android:text="本地视频" />
+
+        <RadioButton
+            android:id="@+id/rb_audio"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_audio_drawable_selector"
+            android:text="本地音频" />
+
+        <RadioButton
+            android:id="@+id/rb_net_video"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_net_video_drawable_selector"
+            android:text="网络视频" />
+
+        <RadioButton
+            android:id="@+id/rb_net_audio"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_net_audio_drawable_selector"
+            android:text="网络段子" />
+
+    </RadioGroup>
+
+
+
+
+
+
+
+</LinearLayout>
